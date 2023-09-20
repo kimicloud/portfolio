@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,40 +9,36 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-
 <body class="bg-gradient-to-r from-indigo-50 via-purple-50 to-blue-50">
-    
-  <!-- Navbar Section -->
 
+    <!-- Navbar Section -->
     <nav class="bg-gray-900 text-white p-4">
         <div class="container mx-auto flex md:flex-row flex-col justify-between items-center p-4">
-            <!-- 1  --> <div class="text-2xl font-semibold mb-2">Kimish</div> 
-            
-            <!-- 2  --> 
+            <!-- 1 --> <div class="text-2xl font-semibold mb-2">Kimish</div>
+
+            <!-- 2 -->
             <div>
                 <ul class="flex space-x-6 mt-2">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#tech-stack">Tech Stack</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about" class="text-purple-300 hover:text-white">About</a></li>
+                    <li><a href="#resume" class="text-purple-300 hover:text-white">Resume</a></li>
+                    <li><a href="#tech-stack" class="text-purple-300 hover:text-white">Tech Stack</a></li>
+                    <li><a href="#contact" class="text-purple-300 hover:text-white">Contact</a></li>
+                    <li><a href="#projects" class="text-purple-300 hover:text-white">Projects</a></li>
+                    <li><a href="#skills" class="text-purple-300 hover:text-white">Skills</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-
     <!-- Main Content -->
-    <div class="container mx-auto p-8 min-h-screen ">
+    <div class="container mx-auto p-8 min-h-screen">
 
         <!-- About Section -->
         <section id="about" class="my-10">
             <h2 class="text-3xl font-semibold">About Me</h2>
-            <p class="text-lg font-semibold text-purple-900">  I am currently studying in Btech 2nd year CSE</p>
-            <!-- Add your content here -->
+            <p class="text-lg font-semibold text-purple-900">I am currently studying in Btech 2nd year CSE</p>
+            <!-- Add more content here if needed -->
         </section>
-
-
 
         <!-- Resume Section -->
         <section id="resume" class="my-12">
@@ -51,43 +46,43 @@
             <!-- Add your resume content here -->
         </section>
 
-
-
         <!-- Tech Stack Section -->
         <section id="tech-stack" class="my-12">
             <h2 class="text-3xl font-semibold">Tech Stack</h2>
-            <!-- <img class="object-cover h-24 w-48" src="html.webp" alt="html logo">
-             -->
-            <ol>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>Tailwind CSS</li>
-              <li>Git Version Control</li>
-            </ol>
-            <!-- Add your tech stack content here -->
+            <ul class="list-disc pl-6 mt-4">
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+                <li>Git Version Control</li>
+                <li>JavaScript</li> <!-- Added JavaScript -->
+                <li>React.js</li> <!-- Added React.js -->
+            </ul>
         </section>
-
-
-
 
         <!-- Contact Section -->
         <section id="contact" class="my-12">
             <h2 class="text-3xl font-semibold">Contact</h2>
-            <p class="text-lg text-blue-800 "> 8233208769</p>
-            
+            <p class="text-lg text-blue-800">8233208769</p>
+            <p class="text-lg text-blue-800">example@email.com</p> <!-- Added email -->
         </section>
 
         <!-- Project Section -->
         <section id="projects" class="my-12">
-          <h2 class="text-3xl font-semibold">Projects</h2>
-          <p class="text-xl text-blue-800 my-4 font-semibold">Portfolio website</p>
-          
-      </section>
-      </div>
+            <h2 class="text-3xl font-semibold">Projects</h2>
+            <p class="text-xl text-blue-800 my-4 font-semibold">Portfolio website</p>
+            <!-- Add more project details here if needed -->
+        </section>
 
-
-
-
+        <!-- Skills Section -->
+        <section id="skills" class="my-12">
+            <h2 class="text-3xl font-semibold">Skills</h2>
+            <ul class="list-disc pl-6 mt-4">
+                <li>Problem Solving</li>
+                <li>Data Structures</li>
+                <li>Algorithm Design</li>
+            </ul>
+        </section>
+    </div>
 
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-white p-4">
@@ -96,7 +91,7 @@
         </div>
     </footer>
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
