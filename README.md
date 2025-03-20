@@ -3,7 +3,7 @@
 Welcome to my personal portfolio! This website showcases my projects, skills, and experience in web development, AI, and technology.  
 
 ## 🔗 Live Demo  
-Check out my portfolio live: [Your Portfolio Link](https://kimish.vercel.app)  
+Check out my portfolio live: [Kimish Portfolio](https://kimish.vercel.app)  
 
 ## 🚀 Features  
 - Responsive design for all devices  
