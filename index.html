@@ -1,157 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <!-- CSS File Link  -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Shortcut icon  -->
-    <link rel="shortcut icon" href="Portfolio-pics/logo.png" />
-    <!-- Font Awesome Cdn Link  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
-  </head>
-  <body>
-    <!-- Navbar Design  -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- Home Page  -->
-      <section class="home" id="home">
-        <span class="text">Welcome To My Portfolio</span> <br />
-        <span class="text first-text">Hi! I'm </span> <br />
-        <span class="text">Kimish Choudhary</span>
-      </section>
-    </header>
-    <!-- About Page  -->
-    <section class="about" id="about">
-      <div class="about-left-side">
-        <img src="images/MePF.jpeg" alt="about-img" />
-      </div>
-      <div class="about-right-side">
-        <h1>About Me</h1>
-        <p>
-          Hello there! I'm Kimish, a second-year Computer Science Engineering student 
-          deeply passionate about web development. 
-          I love making creative websites that solve real-world problems with innovative solutions. 
-           Let's connect and create something amazing together!
-        </p>
-        <center>
-          <a href="RESUME_KIMISH.pdf" target="_blank" class="cv-button">Resume</a>
-        </center>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimish Choudhary - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>KC</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-icon" style="top: 10%; left: 10%;">
+            <i class="fas fa-code"></i>
+        </div>
+        <div class="floating-icon" style="top: 20%; right: 15%;">
+            <i class="fas fa-brain"></i>
+        </div>
+        <div class="floating-icon" style="top: 60%; left: 5%;">
+            <i class="fas fa-database"></i>
+        </div>
+        <div class="floating-icon" style="bottom: 30%; right: 10%;">
+            <i class="fas fa-cloud"></i>
+        </div>
+        <div class="floating-icon" style="bottom: 10%; left: 20%;">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <div class="floating-icon" style="top: 40%; right: 5%;">
+            <i class="fas fa-rocket"></i>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Kimish Choudhary</span></h1>
+            <div class="typewriter-container">
+                <span class="typewriter" id="typewriter"></span>
+            </div>
+            <p class="hero-description">Transforming Ideas into Innovative Solutions</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
-    <!-- Skills Page -->
-<section class="skills" id="skills">
-  <h1 class="skills-heading">Skills</h1>
-  <div class="skills-container">
-    <div class="skill-item">
-      <img src="images/Clogo.png" alt="C" />
-      <h3>C</h3>
-    </div>
-    <div class="skill-item">
-      <img src="images/CSSlogo.png" alt="CSS" />
-      <h3>CSS</h3>
-    </div>
-    <div class="skill-item">
-      <img src="images/HTMLlogo.png" alt="HTML" />
-      <h3>HTML</h3>
-    </div>
-    <div class="skill-item">
-      <img src="images/Javalogo.png" alt="Java" />
-      <h3>Java</h3>
-    </div>
-    <div class="skill-item">
-      <img src="images/JSlogo.png" alt="JavaScript" />
-      <h3>JavaScript</h3>
-    </div>
-    <div class="skill-item">
-      <img src="images/pythonlogo.png" alt="Python" />
-      <h3>Python</h3>
-    </div>
-  </div>
-</section>
 
-    <!-- Projects Page -->
-    <section class="project" id="projects">
-      <h1 class="project-heading">Projects</h1>
-      <div class="project-container">
-        <div class="p1">
-          <img src="/images/Bmicallogo.png" alt="BMI Calculator" />
-          <h3>BMI Calculator</h3>
-          <a href="https://bmi-calculator-theta-snowy.vercel.app" target="_blank">
-            <button>Website</button>
-          </a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="Me.jpeg" alt="Kimish Choudhary">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Hi, I'm Kimish Choudhary — an engineering student passionate about tech, design, and solving real-world problems. I enjoy building projects in AI/ML, cybersecurity, and full-stack development, turning ideas into impactful, user-friendly solutions.</p>
+                    <p>Beyond coding, I love playing cricket and badminton, exploring new places, and unwinding with good music. Traveling and staying curious keep me inspired both in and out of tech.</p>
+                    <p>Let's build something meaningful together!</p>
+                    <a href="RESUME_KIMISH.pdf" class="resume-btn" download="Kimish_Choudhary_Resume.pdf">
+    <i class="fas fa-download"></i>
+    Download Resume
+</a>
+                </div>
+            </div>
         </div>
-        <div class="p1">
-          <img src="/images/Quizapplogo.jpeg" alt="Quiz Game" />
-          <h3>Quiz Game</h3>
-          <a href="https://kim-quiz.vercel.app" target="_blank">
-            <button>Website</button>
-          </a>
-        </div>
-        <div class="p1">
-          <img src="/images/Weatherlogo.jpeg" alt="Weather App" />
-          <h3>Weather App</h3>
-          <a href="https://kim-weather-app.vercel.app" target="_blank">
-            <button>Website</button>
-          </a>
-        </div>
-        <div class="p1">
-          <img src="/images/note-app.jpg" alt="Note App" />
-          <h3>Note App</h3>
-          <a href="https://note-app-kim.vercel.app" target="_blank">
-            <button>Website</button>
-          </a>
-        </div>
-      </div>
     </section>
-    
 
-
-    <!-- Contact Page -->
-    <section class="footer" id="contact">
-      <h1>Let's Connect</h1>
-      <div class="sides">
-        <form class="form">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" /> <br />
-          <br />
-          <input type="text" placeholder=" Subject" />
-          <input type="text" placeholder=" Address" /> <br />
-          <br />
-          <textarea cols="65" rows="5" placeholder="Message"></textarea>
-          <center>
-            <button>Send Message</button>
-            </center>
-        </form>
-
-        <div class="content">
-          <h3>Name:</h3>
-          <h5>Kimish Choudhary</h5>
-          <h3>Email:</h3>
-          <h5>kimishchoudhary19@gmail.com</h5>
-          <h3>Address:</h3>
-          <h5>Marripalem Vudalayout,Visakhapatnam-530009</h5>
-          <br>
-          <div class="icons">
-            <a href="https://www.instagram.com/kimisshhhh" target="_blank"><i class="fa fa-instagram"></i>
-            <a href="https://github.com/kimicloud" target="_blank"><i class="fa fa-github"></i>
-            <a href="https://twitter.com/KimishChoudhary" target="_blank"><i class="fa fa-twitter"></i>
-            <a href="https://www.linkedin.com/in/kimishchoudhary" target="_blank"><i class="fa fa-linkedin"></i>
-          </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">HTML/CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases & Cloud</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Firebase</span>
+                        <span class="skill-item">Microsoft Azure</span>
+                        <span class="skill-item">Google Cloud</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">OpenAI GPT-3</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Edulens</h3>
+                        <p>A platform that streamlines and automates the integration of Learning Management Systems (LMS), enabling seamless connectivity for institutions.</p>
+                        <div class="project-links">
+                            <a href="https://war-room-next.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/kimicloud/Edulens" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="edulens.png" alt="Edulens Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Interview Preparation Assistance</h3>
+                        <p>AI-powered platform to help candidates prepare for technical interviews with personalized feedback.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kimicloud/INTERVIEW-PREPARATION-ASSISTANCE-" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="interviewprep.webp" alt="Interview Prep Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Sahayata</h3>
+                        <p>A full-stack coal monitoring system that reduces manual inspection time by integrating IoT sensors to track load status in real time.</p>
+                        <div class="project-links">
+                            <a href="https://sahayata.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/kimicloud/Sahayata" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="sahayata.avif" alt="Sahayata Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>AI Net Guardian</h3>
+                        <p>Model for analyzing encrypted network traffic behavior in real time to accurately detect threats, reduce false positives, and maintain user privacy.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/kimicloud/INTEL-CIC-DIS-2017-18" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="ainetguardian.jpg" alt="AI Guardian Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Credit Card Fraud Detection</h3>
+                        <p>A machine learning model using Gaussian Mixture Models (GMM) to accurately detect fraudulent credit card transactions by analyzing patterns in historical transaction data.</p>
+                        <div class="project-links">
+                            <a href="https://fraudshieldgmm.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/kimicloud/CRYPTO" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="credit-card-fraud.webp" alt="Fraud Detection Project">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Cosmic Racer</h3>
+                        <p>Cosmic Climbers is a space-themed board game where players race to the Galactic Core by rolling dice, using wormholes to advance, and avoiding asteroid fields that set them back.</p>
+                        <div class="project-links">
+                            <a href="https://cosmicracer-sl.vercel.app" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/kimicloud/SL-Game" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="cosmicracer.jpg" alt="Cosmic Racer Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-column">
+                    <h3>Internships</h3>
+                    <div class="experience-items">
+                        <div class="experience-item">
+                            <h4>AI/ML for Networking Research/Developer</h4>
+                            <span class="date">Apr 2025 – Jun 2025</span>
+                            <span class="company">Intel Unnati Training Program</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Full Stack Intern</h4>
+                            <span class="date">Apr 2025 – Jun 2025</span>
+                            <span class="company">AICTE Eduskills</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>AI/ML Intern</h4>
+                            <span class="date">Jan 2025 – Feb 2025</span>
+                            <span class="company">AICTE – TechSaksham (Microsoft & SAP)</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Space Research Trainee</h4>
+                            <span class="date">Oct 2024 – Dec 2024</span>
+                            <span class="company">Agnirva – Space Internship Program</span>
+                        </div>
+                        <div class="read-more-section">
+                            <button class="read-more-btn" data-target="internships">Read More <i class="fas fa-chevron-down"></i></button>
+                            <div class="hidden-content" id="internships">
+                                <div class="experience-item">
+                                    <h4>AI/ML Trainee</h4>
+                                    <span class="date">Jun 2024 – Jul 2024</span>
+                                    <span class="company">IBM Edunet, AICTE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-column">
+                    <h3>Achievements</h3>
+                    <div class="experience-items">
+                        <div class="experience-item">
+                            <h4>PwC Switzerland – Power BI Job Simulation</h4>
+                            <span class="date">28th Feb 2025 – 6th Mar 2025</span>
+                            <span class="company">PwC</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Road Safety Hackathon</h4>
+                            <span class="date">15th Jan 2025 – 9th Feb 2025</span>
+                            <span class="company">Ministry of Road Transport and Highways</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Smart India Hackathon (SIH) 2024</h4>
+                            <span class="date">3rd Sep 2024 – 4th Sep 2024</span>
+                            <span class="company">GITAM University Visakhapatnam</span>
+                        </div>
+                        <div class="experience-item">
+                            <h4>Woodpecker's Hackathon</h4>
+                            <span class="date">19th Jun 2024 – 13th Jul 2024</span>
+                            <span class="company">Woodpecker Analytics and Services Pvt. Ltd.</span>
+                        </div>
+                        <div class="read-more-section">
+                            <button class="read-more-btn" data-target="achievements">Read More <i class="fas fa-chevron-down"></i></button>
+                            <div class="hidden-content" id="achievements">
+                                <div class="experience-item">
+                                    <h4>Cognizant Hackathon</h4>
+                                    <span class="date">12th May 2024 – 13th May 2024</span>
+                                    <span class="company">GITAM University, Yendada Visakhapatnam</span>
+                                </div>
+                                <div class="experience-item">
+                                    <h4>American Express Makeathon 2024</h4>
+                                    <span class="date">3rd Apr 2024 – 10th May 2024</span>
+                                    <span class="company">HackerEarth</span>
+                                </div>
+                                <div class="experience-item">
+                                    <h4>National Service Scheme (NSS) – Unit XVI</h4>
+                                    <span class="date">4th Mar 2024 – 10th Mar 2024</span>
+                                    <span class="company">MPP School, Chinnagadili Visakhapatnam</span>
+                                </div>
+                                <div class="experience-item">
+                                    <h4>Smart India Hackathon Finalist 2023</h4>
+                                    <span class="date">20th Dec 2023 – 21st Dec 2023</span>
+                                    <span class="company">AICTE, Ministry of Coal Bhopal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Kimish Choudhary</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:7013347693">7013347693</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:kimishchoudhary19@gmail.com">kimishchoudhary19@gmail.com</a>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/in/kimishchoudhary" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/kimicloud" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://x.com/KimishChoudhary" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kimish Choudhary. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
